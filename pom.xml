@@ -32,23 +32,22 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.3.2</version>
+				<version>3.3.5</version>
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.2.2</muleVersion>
+						<muleVersion>4.2.2-hf2</muleVersion>
 						<username>DestinyWins</username>
-						<password>DestinyWins1</password>
+						<password>DestinyWins</password>
 						<applicationName>sample-cicd-project</applicationName>
 						<environment>Sandbox</environment>
 						<workerType>MICRO</workerType>
-						<properties>
-							<key>value</key>
-						</properties>
+						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 
