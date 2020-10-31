@@ -39,7 +39,7 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.2.2-hf2</muleVersion>
 						<username>DestinyWins</username>
-						<password>DestinyWins</password>
+						<password>DestinyWins1</password>
 						<applicationName>sample-cicd-project</applicationName>
 						<environment>Sandbox</environment>
 						<workerType>MICRO</workerType>
