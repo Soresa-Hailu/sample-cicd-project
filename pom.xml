@@ -30,25 +30,26 @@
 				</configuration>
 			</plugin>
 			<plugin>
-        <groupId>org.mule.tools.maven</groupId>
-        <artifactId>mule-maven-plugin</artifactId>
-        <version>3.3.2</version>
-        <extensions>true</extensions>
-        <configuration>
-        <cloudHubDeployment>
-          <uri>https://anypoint.mulesoft.com</uri>
-          <muleVersion>4.2.2</muleVersion>
-          <username>DestinyWins</username>
-          <password>DestinyWins1</password>
-          <applicationName>sample-cicd-project-soresa</applicationName>
-          <environment>Sandbox</environment>
-          <workerType>MICRO</workerType>
-          <properties>
-          <key>value</key>
-          </properties>
-        </cloudHubDeployment>
-        </configuration>
-      </plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>3.3.2</version>
+				<extensions>true</extensions>
+				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>${app.runtime}</muleVersion>
+						<username>${username}</username>
+						<password>${password}</password>
+						<applicationName>${cloudhub.application.name}</applicationName>
+						<environment>${environment}</environment>
+						<workerType>${workerType}</workerType>
+						<properties>
+							<key>value</key>
+						</properties>
+					</cloudHubDeployment>
+				</configuration>
+			</plugin>
+
 
 		</plugins>
 	</build>
